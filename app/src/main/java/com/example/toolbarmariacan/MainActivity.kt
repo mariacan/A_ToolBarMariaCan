@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         var vistaBusqueda = itemBusqueda?.actionView as SearchView
         var itemCompartir = menu?.findItem(R.id.share)
         val shareActionProvider = MenuItemCompat.getActionProvider(itemCompartir) as ShareActionProvider
-        //compartirIntent(shareActionProvider)
+        compartirIntent(shareActionProvider)
 
         vistaBusqueda.queryHint = "Escribe tu nombre..."
         vistaBusqueda.setOnQueryTextFocusChangeListener { view, hasFocus ->
